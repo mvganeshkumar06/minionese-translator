@@ -3,6 +3,8 @@ const btn = document.querySelector("button");
 const output = document.querySelector("#output textarea");
 const alertModal = document.querySelector("#alertModal");
 
+output.value = "";
+
 btn.addEventListener("click", () => {
   output.value = "";
 
@@ -27,8 +29,4 @@ btn.addEventListener("click", () => {
       });
   }
   input.value = "";
-});
-
-window.addEventListener("DOMContentLoaded", () => {
-  output.value = "";
 });
