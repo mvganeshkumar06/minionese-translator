@@ -1,0 +1,160 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  --primaryColor: #f6e05e;
+  --linksColor: rgb(162, 0, 255);
+}
+
+body {
+  background-color: var(--primaryColor);
+}
+
+#head {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+#head p {
+  font-weight: bold;
+  align-self: center;
+}
+
+#head img {
+  width: 55px;
+  height: 80px;
+  margin-left: auto;
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0px 80px 0px;
+}
+
+#container p {
+  font-size: large;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background-color: rgb(255, 72, 0);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  margin: 30px 0px;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgb(104, 104, 104);
+}
+
+#input textarea,
+#output textarea {
+  resize: none;
+  border: none;
+  box-shadow: 1px 1px 5px 1px rgb(173, 173, 173);
+  width: 75vw;
+  height: 25vh;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+#alertModal {
+  display: none;
+  background-color: rgb(255, 72, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+
+  justify-self: center;
+  width: 250px;
+  margin: 10px 0px;
+}
+
+#alertModal h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#heartIcon {
+  width: 20px;
+  height: 20px;
+}
+
+#iconAttribution {
+  color: var(--linksColor);
+  margin: 5px 0px;
+}
+
+#socialFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+  margin: 0px 1px;
+  border-radius: 5px;
+}
+
+.icons:hover {
+  box-shadow: 1px 1px 1px 1px rgb(104, 104, 104);
+}
+
+@media (min-width: 450px) {
+  #head {
+    width: 65vw;
+  }
+  #input textarea,
+  #output textarea {
+    height: 25vh;
+    margin: 0px 10px;
+  }
+  .icons {
+    margin: 0px 5px;
+  }
+}
+
+@media (min-width: 600px) {
+  #head {
+    width: 50vw;
+  }
+  #head img {
+    margin-left: 50px;
+  }
+  #input textarea,
+  #output textarea {
+    width: 50vw;
+    height: 30vh;
+    margin: 0px 15px;
+  }
+}
