@@ -60,8 +60,8 @@ button:hover {
   box-shadow: 1px 1px 1px 1px rgb(104, 104, 104);
 }
 
-#input textarea,
-#output textarea {
+#inputTextarea,
+#outputTextarea {
   resize: none;
   border: none;
   box-shadow: 1px 1px 5px 1px rgb(173, 173, 173);

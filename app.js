@@ -1,6 +1,6 @@
-const input = document.querySelector("#input textarea");
+const input = document.querySelector("#inputTextarea");
 const btn = document.querySelector("button");
-const output = document.querySelector("#output textarea");
+const output = document.querySelector("#outputTextarea");
 const alertModal = document.querySelector("#alertModal");
 
 output.value = "";
