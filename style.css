@@ -4,12 +4,7 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: small;
-  --primaryColor: #f6e05e;
-  --linksColor: rgb(162, 0, 255);
-}
-
-body {
-  background-color: var(--primaryColor);
+  background-color: #f6e05e;
 }
 
 #head {
@@ -45,42 +40,46 @@ body {
   text-align: center;
 }
 
+#btnContainer {
+  display: flex;
+}
+
 button {
   border: none;
-  background-color: rgb(255, 72, 0);
+  background-color: rgb(255, 0, 0);
   color: rgb(255, 255, 255);
   padding: 5px;
-  margin: 30px 0px;
+  margin: 30px 15px;
   border-radius: 5px;
   font-size: medium;
 }
 
 button:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 1px 1px rgb(104, 104, 104);
+  box-shadow: 1px 1px 2px 1px rgb(34, 34, 34);
 }
 
 #inputTextarea,
 #outputTextarea {
   resize: none;
   border: none;
-  box-shadow: 1px 1px 5px 1px rgb(173, 173, 173);
+  background-color: rgba(255, 255, 255, 0.555);
   width: 75vw;
   height: 25vh;
   padding: 10px;
   border-radius: 5px;
-  font-size: medium;
+  font-size: large;
 }
 
 #alertModal {
   display: none;
-  background-color: rgb(255, 72, 0);
+  background-color: rgb(255, 0, 0);
   color: rgb(255, 255, 255);
   border-radius: 5px;
-
   justify-self: center;
   width: 250px;
   margin: 10px 0px;
+  padding: 5px 0px;
 }
 
 #alertModal h1 {
@@ -110,8 +109,9 @@ footer {
 }
 
 #iconAttribution {
-  color: var(--linksColor);
+  color: rgb(162, 0, 255);
   margin: 5px 0px;
+  font-weight: bold;
 }
 
 #socialFooter {
@@ -127,7 +127,7 @@ footer {
 }
 
 .icons:hover {
-  box-shadow: 1px 1px 1px 1px rgb(104, 104, 104);
+  box-shadow: 1px 1px 2px 1px rgb(34, 34, 34);
 }
 
 @media (min-width: 450px) {

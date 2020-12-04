@@ -25,9 +25,7 @@
         <p>English to Minionese Translator</p>
         <img src="./assets/Minion.png" alt="minion" />
       </div>
-      <div id="alertModal">
-        <p>Please enter some text</p>
-      </div>
+      <p id="alertModal">Please enter some text</p>
       <div id="input">
         <p>English</p>
         <textarea
@@ -35,7 +33,10 @@
           placeholder="Enter some text to convert it into minionese language"
         ></textarea>
       </div>
-      <button>Translate</button>
+      <div id="btnContainer">
+        <button id="btnTranslate">Translate</button>
+        <button id="btnReset">Reset</button>
+      </div>
       <div id="output">
         <p>Minionese</p>
         <textarea id="outputTextarea" readonly></textarea>
@@ -83,6 +84,17 @@
             class="icons"
             src="https://img.icons8.com/fluent/48/000000/linkedin.png"
             alt="linkedin"
+          />
+        </a>
+        <a
+          href="https://dev.to/ganeshkumar6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="icons"
+            src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+            alt="dev"
           />
         </a>
       </div>

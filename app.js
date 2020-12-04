@@ -1,11 +1,12 @@
 const input = document.querySelector("#inputTextarea");
-const btn = document.querySelector("button");
+const btnTranslate = document.querySelector("#btnTranslate");
+const btnReset = document.querySelector("#btnReset");
 const output = document.querySelector("#outputTextarea");
 const alertModal = document.querySelector("#alertModal");
 
 output.value = "";
 
-btn.addEventListener("click", () => {
+btnTranslate.addEventListener("click", () => {
   output.value = "";
 
   if (!input.value) {
@@ -28,5 +29,9 @@ btn.addEventListener("click", () => {
         console.log(error, error.message);
       });
   }
+});
+
+btnReset.addEventListener("click", () => {
   input.value = "";
+  output.value = "";
 });
